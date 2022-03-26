@@ -10,18 +10,16 @@ const Resultado = () => {
   //Grados Kelvin
   const gKelvin = 273.15;
 
-  const converter =() => { 
-    const gradosKelvin = parseInt(main.temp - 273.15)
-    console.log(gradosKelvin)
-  }
-
   return (
     <div className="contenedor clima">
       <h2>El Clima de {name} es: </h2>
     
-      <p> {converter.gradosKelvin} </p>
+      <p>{parseInt(main.temp - gKelvin)}</p>
       <p>{weather[0].main}</p>
-    
+      <div className="temp_min_max">
+        <p>Mín: {parseInt(main.temp_min - gKelvin)}</p>
+        <p>Max: {parseInt(main.temp_max - gKelvin)}</p>
+      </div>
       <div>
      
       </div>
