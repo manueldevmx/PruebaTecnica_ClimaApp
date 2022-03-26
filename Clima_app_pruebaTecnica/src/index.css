@@ -109,6 +109,8 @@ input[type="submit"]:hover {
   width: 100%;
 }
 .clima {
+  align-items: center;
+  justify-content: center;
 }
 .clima > p:first-of-type {
   font-size: 6rem;
@@ -124,6 +126,18 @@ input[type="submit"]:hover {
   display: flex;
   justify-content: center;
   gap: 2rem;
+}
+
+.btnChange {
+  margin-top: 1rem;
+  padding: 9px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  border-radius: 18px;
+  background-color: rgb(94, 247, 188);
 }
 
 .spinner {
